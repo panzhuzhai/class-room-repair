@@ -4,7 +4,6 @@ import (
 	"class-room-repair/config"
 	"class-room-repair/logger"
 	"class-room-repair/middleware/database"
-	"class-room-repair/oss"
 	"github.com/gin-gonic/gin"
 )
 
@@ -22,5 +21,4 @@ func Init() {
 	config.InitBtcNetwork(gin.Mode())
 
 	database.InitDatabase()
-	oss.InitAws()
 }

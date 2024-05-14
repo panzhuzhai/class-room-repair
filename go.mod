@@ -10,6 +10,7 @@ require (
 	github.com/decred/dcrd/dcrec/secp256k1/v4 v4.3.0
 	github.com/ethereum/go-ethereum v1.14.3
 	github.com/gin-gonic/gin v1.10.0
+	github.com/golang-jwt/jwt/v4 v4.5.0
 	github.com/kelseyhightower/envconfig v1.4.0
 	github.com/samber/lo v1.39.0
 	github.com/stretchr/testify v1.9.0

@@ -2,6 +2,7 @@ package internal
 
 import (
 	"class-room-repair/middleware/sign/btc/internal/flags"
+	"github.com/btcsuite/btcd/btcec/v2"
 	"github.com/btcsuite/btcd/btcutil"
 	"github.com/samber/lo"
 )

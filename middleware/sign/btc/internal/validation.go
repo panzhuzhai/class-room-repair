@@ -4,6 +4,7 @@ import (
 	"class-room-repair/middleware/sign/btc/internal/flags"
 	"errors"
 	"fmt"
+	"github.com/btcsuite/btcd/btcec/v2"
 
 	"github.com/btcsuite/btcd/btcec/v2/schnorr"
 	"github.com/btcsuite/btcd/btcutil"
