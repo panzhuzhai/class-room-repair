@@ -3,6 +3,7 @@ package config
 import (
 	"class-room-repair/constants"
 	"crypto/rsa"
+	"github.com/golang-jwt/jwt/v4"
 	"github.com/kelseyhightower/envconfig"
 	"log"
 	"os"
@@ -17,14 +18,6 @@ type Config struct {
 	}
 	JwtAttribute struct {
 		SignValidTimeMs int64 `yaml:"sign_valid_time_ms" envconfig:"SIGN_VALID_TIME_MS" default:"30000"`
-	}
-
-	AwsAttribute struct {
-		AwsRegion          string `yaml:"aws_region" envconfig:"AWS_REGION" default:""`
-		AwsAccessKeyId     string `yaml:"aws_access_key_id" envconfig:"AWS_ACCESS_KEY_ID" default:""`
-		AwsSecretAccessKey string `yaml:"aws_secret_access_key" envconfig:"AWS_SECRET_ACCESS_KEY" default:""`
-		AwsBucketName      string `yaml:"aws_bucket_name" envconfig:"AWS_BUCKET_NAME" default:""`
-		AwsExpirationTime  int64  `yaml:"aws_expiration_time" envconfig:"AWS_EXPIRATION_TIME" default:"168"`
 	}
 	TestAttribute struct {
 		TestApiHost string `yaml:"test_api_host" envconfig:"TEST_API_HOST" default:""`

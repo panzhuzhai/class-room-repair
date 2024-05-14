@@ -61,8 +61,7 @@ func NewRouter() *gin.Engine {
 
 	unauthorized := v1.Group("web-unauthorized/")
 	{
-		unauthorized.POST("auth/refresh-token", initJwt.RefreshHandler)
-
+		unauthorized.GET("class-room", api.ClassRoom)
 	}
 
 	webOrientedGroup := v1.Group("web-oriented/")
